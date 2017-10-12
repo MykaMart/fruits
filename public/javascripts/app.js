@@ -1,0 +1,1 @@
+console.log("Window is laoded, this is client side javascript, being run by the browser")

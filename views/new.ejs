@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=8, IE=9, IE=edge"/>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="/styles/style.css">
+</head>
+<body>
+	<h1>New Fruit Page</h1>							<!-- action= we're sending the request to /fruits/create -->
+	<form action="/fruits/create"  method="POST">	<!-- method=type of http request we're tyring to make POST-> Sending info to server --> <!-- Taking all the informtionat from the form in /create and posting it to the server --> 
+	<!-- The data is then posted to the server through the route (our controller in this case) -->
+
+ 		Name: <input type="text" name="name">
+		Color: <input type="text" name="color">
+		Ready To Eat: <input type="checkbox" name="readyToEat">		
+		<button type="submit">Submit</button>	<!-- input sent to the server is in the request body -->
+	</form>     <!--  buttone triggers the post route -->
+
+</body>
+</html>
+
+
+<!-- Whenever a client makes a request with no user input the server sends body of defualt data -->
+
+posting is ccreating
+
+c create - corresponds to post (client sends data via input server creates server-side data based on input data only temporary unles stored to a database)
+
+r read - corresponds to get (client reading information sent by server)
+
+u update - corresponds to patch
+
+d delete - delete
